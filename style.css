@@ -1,0 +1,127 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #222;
+}
+
+.navbar-brand,
+.nav-link,
+.btn-download {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #7A288A !important;
+}
+
+.btn-download {
+    background-color: #7A288A;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.btn-download:hover {
+    background-color: #6c2077;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre a foto e as informações */
+}
+
+.profile-info {
+    max-width: 100%;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    /* Aumenta o tamanho do texto das informações */
+}
+
+@media (min-width: 768px) {
+    .profile-info {
+        max-width: 60%;
+        font-size: 1.5rem;
+        /* Aumenta o tamanho do texto das informações em telas maiores */
+    }
+}
+
+.profile-photo img {
+    width: 200px;
+    /* Aumenta o tamanho da imagem */
+    height: 200px;
+    /* Aumenta o tamanho da imagem */
+    object-fit: cover;
+    border: 3px solid #7A288A;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column; /* Coloca a imagem em cima da informação */
+        align-items: center; /* Centraliza o conteúdo */
+    }
+
+    .profile-info {
+        text-align: center; /* Centraliza as informações do perfil */
+    }
+}
+
+.activity-card {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-purple {
+    background-color: #7A288A;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: #6c2077;
+    transform: translateY(-3px);
+}
+
+.activity-image {
+    width: 100%; /* Aumenta a largura da imagem para 100% do espaço disponível */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ajuste para aumentar a imagem do projeto */
+.activity-image:hover {
+    transform: scale(1.1); /* Aumenta a escala da imagem ao passar o mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.activity-card a {
+    text-decoration: none;
+}
+
+h2.text-purple {
+    color: #7A288A; /* Usando o mesmo roxo dos outros elementos */
+}
